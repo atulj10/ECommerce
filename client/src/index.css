@@ -1,0 +1,158 @@
+/* importing the font-family for using form google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px gray;
+  --webkit-box-shadow: 0 8px 6px -6px gray;
+  border-bottom: solid gray !important;
+}
+
+.nav-link {
+  font-weight: 300 !important;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  word-spacing: 3px;
+}
+/* 
+==================================
+=============Register=============*/
+
+.register-container{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+/* =================================
+   ======page not found============= */
+
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+
+  &:hover {
+    color: white;
+    background-color: black;
+  }
+}
+
+/* ==============================
+   ========Contact=============== */
+
+.row {
+  padding: 150px;
+}
+
+.contact-heading {
+  padding: 10px 90px;
+  background-color: #000000;
+  color: white;
+}
+
+.details {
+  padding: 20px;
+  padding-top: 70px;
+  line-break: strict;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.details>p{
+  font-size: large;
+  font-family:Arial, Helvetica, sans-serif;
+}
+/* 
+=====================================
+=============About=================== */
+
+.about-container{
+  display: flex;
+  padding: 150px;
+}
+.about-content{
+  padding: 20px;
+}
+
+/* ===================================
+   ==========Policy=================== */
+
+.policy-container{
+  display: flex;
+  padding: 150px;
+  background-color: rgb(248, 248, 248);
+}
+
+.policy-contents{
+  padding: 70px;
+}
+
+/*  ================================= 
+    ==============FOOTER=============  */
+
+.footer {
+  color: white;
+  padding: 25px;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000, #434343);
+  background: linear-gradient(to right, #434343, #000000, #434343)
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.footer a:hover {
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}
+
+
+/* ======================== */
+
+.product-link{
+  text-decoration: none;
+  color: #000000 !important;
+}
