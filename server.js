@@ -7,7 +7,7 @@ import authRoutes from "./routes/authRoute.js";
 import cors from "cors"
 import categoryRoutes from './routes/categoryRoutes.js'
 import productRoutes from './routes/productRoutes.js'
-import path from 'path'
+import path from "path"
 import {fileURLToPath} from 'url'
 //For the import of the connectDB function we have use the extension
 //along with the name of the file if we're using the import i.e. ES6 module
@@ -16,7 +16,7 @@ dotenv.config();//Configuring the env file
 
 connectDB()//For establishing the connection between the database and the sever
 //Es6 fix
-const __filename=fileURLToPath(import.meta.path)
+const __filename=fileURLToPath(import.meta.url)
 const __dirname=path.dirname(__filename)
 
 const app = express()//Making the instance of express
