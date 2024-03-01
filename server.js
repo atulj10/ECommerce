@@ -14,7 +14,6 @@ import {fileURLToPath} from 'url'
 
 dotenv.config();//Configuring the env file
 
-connectDB()//For establishing the connection between the database and the sever
 //Es6 fix
 const __filename=fileURLToPath(import.meta.url)
 const __dirname=path.dirname(__filename)
@@ -41,6 +40,10 @@ app.use("*",function(req,res){
 
 
 //Listening to the port of the server
-app.listen(port, () => {
+//For establishing the connection between the database and the sever
+connectDB().then(()=>{
+    app.listen(port, () => {
     console.log(`Server running on Port:${port}`.bgBlue.white)
 })
+})
+
